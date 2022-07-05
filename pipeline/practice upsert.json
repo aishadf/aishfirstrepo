@@ -5,14 +5,7 @@
 			{
 				"name": "Copy data1",
 				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "Wait1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -96,18 +89,6 @@
 					},
 					"body": {
 						"value": "{\n\"pipelinename\":\"@{pipeline().Pipeline}\",\n\"error\":\"@{activity('Copy data1').Error.Message}\",\n\"Datafactoryname\":\"@{pipeline().DataFactory}\"\n}",
-						"type": "Expression"
-					}
-				}
-			},
-			{
-				"name": "Wait1",
-				"type": "Wait",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"waitTimeInSeconds": {
-						"value": "@pipeline().parameters.waitinsec",
 						"type": "Expression"
 					}
 				}
