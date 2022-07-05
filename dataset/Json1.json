@@ -1,0 +1,57 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "cars.json",
+				"folderPath": "input",
+				"container": "aishcontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"cars": {
+					"type": "object",
+					"properties": {
+						"Nissan": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"model": {
+										"type": "string"
+									},
+									"doors": {
+										"type": "integer"
+									}
+								}
+							}
+						},
+						"Ford": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"model": {
+										"type": "string"
+									},
+									"doors": {
+										"type": "integer"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
