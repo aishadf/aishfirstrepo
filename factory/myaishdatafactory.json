@@ -1,0 +1,9 @@
+{
+	"name": "myaishdatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "518dec1c-1bf7-413d-aa13-1ea2ca5beb32",
+		"tenantId": "a6d0532f-18ef-4e3c-a22b-79a56478faf4"
+	}
+}

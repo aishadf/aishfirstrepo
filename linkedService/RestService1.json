@@ -1,0 +1,15 @@
+{
+	"name": "RestService1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "http://restapi.adequateshop.com/api/authaccount/registration",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Basic",
+			"userName": "Developer",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDMwNjVCMzJELUMzN0YtNEE1NC05MjkyLTExMjNCREUzQ0VFQV81YjI5NjcwMC00ZWViLTQ1ZDItOWMwNi02YThhNzQ3YjYxYTIiDQp9"
+		}
+	}
+}
